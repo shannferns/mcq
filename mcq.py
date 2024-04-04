@@ -1,5 +1,3 @@
-
-
 import streamlit as st
 
 def display_quiz(questions):
@@ -21,7 +19,7 @@ def main():
     st.title("MCQ Quiz App")
 
     # Define collapsible sections for different topics
-    with st.beta_expander("Motivation Theories"):
+    with st.expander("Motivation Theories"):
         motivation_questions = [
             {
                 'question': "What is the need hierarchy theory proposed by Abraham Maslow?",
@@ -36,7 +34,7 @@ def main():
             motivation_score = calculate_score(motivation_answers, motivation_questions)
             st.write(f"Your score for Motivation Theories is: {motivation_score}/{len(motivation_questions)}")
 
-    with st.beta_expander("Emotions"):
+    with st.expander("Emotions"):
         emotions_questions = [
             {
                 'question': "What is the James-Lange theory of emotion?",
