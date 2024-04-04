@@ -16,7 +16,7 @@ def calculate_score(user_answers, questions):
     return score
 
 def main():
-    st.set_page_config(page_title="MPhil Mock Tests", page_icon="🧠", layout="wide", initial_sidebar_state="collapsed", theme="dark")
+    st.set_page_config(page_title="MPhil Mock Tests", page_icon="🧠", layout="wide", initial_sidebar_state="collapsed")
     st.title("MPhil Mock Tests")
 
     # Define collapsible sections for different topics
